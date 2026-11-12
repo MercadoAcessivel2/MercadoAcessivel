@@ -1,0 +1,705 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0b2340">
+
+    <meta name="description"
+          content="Conheça os objetivos e a história do projeto Mercado Acessível.">
+
+    <title>O Projeto | Mercado Acessível</title>
+
+    <link rel="icon" href="assets/favicon.svg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+<a href="#conteudo" class="skip-link">
+    Pular para o conteúdo
+</a>
+
+<div class="topline">
+    Tecnologia, inclusão e autonomia • Projeto acadêmico do SENAC RN
+</div>
+
+<!-- MENU PRINCIPAL -->
+
+<header class="site-header">
+    <div class="container header-inner">
+
+        <a href="index.html" class="brand">
+            <span class="brand-mark">🛒</span>
+            <span>Mercado<strong>Acessível</strong></span>
+        </a>
+
+        <nav class="site-nav"
+             id="site-nav"
+             aria-label="Navegação principal">
+
+            <a href="index.html">Início</a>
+            <a href="projeto.html" aria-current="page">O projeto</a>
+            <a href="prototipo.html">Protótipo 3D</a>
+            <a href="funcionamento.html">Tecnologia</a>
+            <a href="aplicativo.html">Aplicativo</a>
+            <a href="galeria.html">Galeria</a>
+            <a href="mapa.html">Mapa</a>
+
+        </nav>
+
+        <div class="header-controls">
+
+            <div class="a11y-menu">
+
+                <button type="button"
+                        id="a11y-toggle"
+                        class="icon-btn"
+                        aria-label="Opções de acessibilidade"
+                        aria-controls="a11y-panel"
+                        aria-expanded="false">
+                    ♿
+                </button>
+
+                <div id="a11y-panel" class="a11y-panel">
+
+                    <p><strong>Acessibilidade do site</strong></p>
+
+                    <div class="a11y-buttons">
+                        <button type="button" data-font="plus">
+                            A+
+                        </button>
+
+                        <button type="button" data-font="minus">
+                            A−
+                        </button>
+
+                        <button type="button" id="contrast-toggle">
+                            Contraste
+                        </button>
+
+                        <button type="button" id="read-page">
+                            Ler página
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <button type="button"
+                    id="nav-toggle"
+                    class="icon-btn menu-toggle"
+                    aria-label="Abrir menu"
+                    aria-controls="site-nav"
+                    aria-expanded="false">
+                ☰
+            </button>
+
+        </div>
+    </div>
+</header>
+
+<main id="conteudo" tabindex="-1">
+
+    <!-- APRESENTAÇÃO -->
+
+    <section class="page-hero">
+        <div class="container">
+
+            <div class="breadcrumbs">
+                <a href="index.html">Início</a>
+                /
+                O projeto
+            </div>
+
+            <span class="kicker">Sobre o projeto</span>
+
+            <h1>
+                Acessibilidade que se pensa junto.
+            </h1>
+
+            <p class="lead">
+                O Mercado Acessível nasceu de uma pergunta:
+                como a tecnologia pode ajudar pessoas a
+                realizarem suas compras com mais autonomia,
+                segurança e praticidade?
+            </p>
+
+            <div class="btn-row">
+
+                <a href="#motivacao" class="btn">
+                    Conheça nossa ideia →
+                </a>
+
+                <a href="prototipo.html" class="btn outline">
+                    Explorar protótipo 3D
+                </a>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- MOTIVAÇÃO -->
+
+    <section class="section white" id="motivacao">
+        <div class="container spotlight">
+
+            <div class="reveal">
+
+                <span class="kicker">
+                    Nossa motivação
+                </span>
+
+                <h2>
+                    Um desafio presente no cotidiano.
+                </h2>
+
+                <p class="lead">
+                    Ir ao supermercado é uma atividade comum,
+                    mas pode apresentar dificuldades para
+                    pessoas com deficiência visual, baixa visão
+                    ou mobilidade reduzida.
+                </p>
+
+                <p>
+                    Corredores movimentados, obstáculos,
+                    etiquetas pequenas e dificuldades para
+                    localizar produtos podem tornar a experiência
+                    de compra menos acessível.
+                </p>
+
+                <p>
+                    Pensando nisso, desenvolvemos a proposta
+                    de um carrinho equipado com sensores
+                    ultrassônicos e um aplicativo de apoio
+                    às compras.
+                </p>
+
+                <p>
+                    Nossa intenção é oferecer uma ferramenta
+                    complementar, que ajude na orientação
+                    sem substituir os recursos de mobilidade
+                    que a pessoa já utiliza.
+                </p>
+
+            </div>
+
+            <div class="stacked-images reveal">
+
+                <img
+                    src="imagens/carrinho-05.png"
+                    alt="Modelo digital do carrinho Mercado Acessível"
+                    loading="lazy"
+                    style="object-fit:contain;background:#e9f1f6">
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- OBJETIVOS -->
+
+    <section class="section wash">
+        <div class="container">
+
+            <div class="section-head">
+                <div>
+
+                    <span class="kicker">
+                        Nossos objetivos
+                    </span>
+
+                    <h2>
+                        O que queremos desenvolver?
+                    </h2>
+
+                    <p>
+                        O projeto busca unir recursos eletrônicos
+                        e digitais para contribuir com uma
+                        experiência de compra mais acessível.
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="grid-3">
+
+                <article class="feature-card reveal">
+
+                    <div class="feature-icon blue">
+                        📡
+                    </div>
+
+                    <h3>Identificar obstáculos</h3>
+
+                    <p>
+                        Utilizar três sensores ultrassônicos,
+                        posicionados na frente e nas laterais,
+                        para identificar obstáculos próximos
+                        ao carrinho.
+                    </p>
+
+                </article>
+
+                <article class="feature-card reveal">
+
+                    <div class="feature-icon">
+                        🔊
+                    </div>
+
+                    <h3>Emitir alertas</h3>
+
+                    <p>
+                        Usar sinais sonoros e luminosos
+                        para informar quando um objeto
+                        estiver próximo do equipamento.
+                    </p>
+
+                </article>
+
+                <article class="feature-card reveal">
+
+                    <div class="feature-icon green">
+                        📱
+                    </div>
+
+                    <h3>Organizar as compras</h3>
+
+                    <p>
+                        Criar um aplicativo que permita
+                        montar listas de produtos,
+                        acompanhar valores e controlar
+                        o orçamento durante as compras.
+                    </p>
+
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- PÚBLICO-ALVO -->
+
+    <section class="section white">
+        <div class="container split-info">
+
+            <div class="reveal">
+
+                <span class="kicker">
+                    Público do projeto
+                </span>
+
+                <h2>
+                    Para quem estamos desenvolvendo?
+                </h2>
+
+                <p class="lead">
+                    O Mercado Acessível foi pensado principalmente
+                    para pessoas com deficiência visual,
+                    baixa visão e pessoas idosas que enfrentam
+                    dificuldades durante as compras.
+                </p>
+
+                <p>
+                    A proposta pretende oferecer mais
+                    orientação e facilitar a organização
+                    das compras, respeitando a autonomia
+                    e as diferentes necessidades de cada pessoa.
+                </p>
+
+                <div class="note blue">
+                    A tecnologia deve ser desenvolvida
+                    com a participação das pessoas que
+                    poderão utilizá-la.
+                </div>
+
+            </div>
+
+            <div class="feature-card reveal">
+
+                <h3>
+                    Etapas do desenvolvimento
+                </h3>
+
+                <div class="spec-list">
+
+                    <div class="spec-row">
+                        <strong>Identificação do problema</strong>
+                        <span class="tag">Realizada</span>
+                    </div>
+
+                    <div class="spec-row">
+                        <strong>Pesquisa e planejamento</strong>
+                        <span class="tag">Realizados</span>
+                    </div>
+
+                    <div class="spec-row">
+                        <strong>Visita ao CADV</strong>
+                        <span class="tag">Realizada</span>
+                    </div>
+
+                    <div class="spec-row">
+                        <strong>Modelo digital</strong>
+                        <span class="tag">Desenvolvido</span>
+                    </div>
+
+                    <div class="spec-row">
+                        <strong>Montagem do carrinho</strong>
+                        <span class="tag">Em desenvolvimento</span>
+                    </div>
+
+                    <div class="spec-row">
+                        <strong>Testes e validação</strong>
+                        <span class="tag">A desenvolver</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- VISITA AO CADV -->
+
+    <section class="section wash" id="cadv">
+        <div class="container spotlight">
+
+            <div class="stacked-images reveal">
+
+                <img
+                    src="imagens/visita-cadv-02.jpg"
+                    alt="Registro da visita realizada ao CADV"
+                    loading="lazy">
+
+            </div>
+
+            <div class="reveal">
+
+                <span class="kicker">
+                    Pesquisa de campo
+                </span>
+
+                <h2>
+                    Nossa visita ao CADV
+                </h2>
+
+                <p class="lead">
+                    Durante o desenvolvimento do projeto,
+                    realizamos uma visita ao CADV,
+                    buscando conhecer experiências e
+                    necessidades relacionadas à deficiência visual.
+                </p>
+
+                <p>
+                    Esse contato ajudou o grupo a refletir
+                    sobre a importância de criar soluções
+                    considerando as dificuldades e as
+                    experiências reais das pessoas.
+                </p>
+
+                <p>
+                    A visita representou uma etapa de
+                    aprendizado e pesquisa, contribuindo
+                    para o aperfeiçoamento da proposta.
+                </p>
+
+                <a href="galeria.html" class="btn">
+                    Ver fotos da visita →
+                </a>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- TECNOLOGIAS -->
+
+    <section class="section white">
+        <div class="container">
+
+            <div class="section-head">
+
+                <div>
+                    <span class="kicker">
+                        Nossa tecnologia
+                    </span>
+
+                    <h2>
+                        Como pretendemos transformar
+                        a ideia em realidade?
+                    </h2>
+
+                    <p>
+                        O carrinho reúne componentes eletrônicos
+                        e um sistema digital de apoio às compras.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="grid-3">
+
+                <article class="feature-card reveal">
+
+                    <div class="feature-icon blue">
+                        ⚙️
+                    </div>
+
+                    <h3>Arduino</h3>
+
+                    <p>
+                        Responsável pelo processamento
+                        das informações recebidas dos
+                        sensores e pelo controle dos alertas.
+                    </p>
+
+                </article>
+
+                <article class="feature-card reveal">
+
+                    <div class="feature-icon">
+                        🛒
+                    </div>
+
+                    <h3>Carrinho inteligente</h3>
+
+                    <p>
+                        Estrutura equipada com sensores
+                        de distância e componentes de aviso
+                        sonoro e luminoso.
+                    </p>
+
+                </article>
+
+                <article class="feature-card reveal">
+
+                    <div class="feature-icon green">
+                        📲
+                    </div>
+
+                    <h3>Aplicativo acessível</h3>
+
+                    <p>
+                        Interface para gerenciar a lista
+                        de compras, consultar valores e
+                        utilizar a leitura em voz alta.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ETAPAS DO PROJETO -->
+
+    <section class="section wash">
+        <div class="container">
+
+            <div class="section-head">
+
+                <div>
+                    <span class="kicker">
+                        Desenvolvimento
+                    </span>
+
+                    <h2>
+                        O caminho do Mercado Acessível
+                    </h2>
+
+                </div>
+
+            </div>
+
+            <div class="steps">
+
+                <article class="step reveal">
+                    <div>
+
+                        <h3>Identificação do problema</h3>
+
+                        <p>
+                            Análise das dificuldades que podem
+                            existir durante a realização de
+                            compras em supermercados.
+                        </p>
+
+                    </div>
+                </article>
+
+                <article class="step reveal">
+                    <div>
+
+                        <h3>Pesquisa e contato com o público</h3>
+
+                        <p>
+                            Levantamento de informações
+                            e visita ao CADV para ampliar
+                            o conhecimento sobre acessibilidade.
+                        </p>
+
+                    </div>
+                </article>
+
+                <article class="step reveal">
+                    <div>
+
+                        <h3>Planejamento do protótipo</h3>
+
+                        <p>
+                            Definição dos componentes eletrônicos,
+                            criação do modelo digital e
+                            organização das funcionalidades.
+                        </p>
+
+                    </div>
+                </article>
+
+                <article class="step reveal">
+                    <div>
+
+                        <h3>Montagem e programação</h3>
+
+                        <p>
+                            Etapa de integração dos sensores,
+                            desenvolvimento dos alertas e
+                            construção da proposta tecnológica.
+                        </p>
+
+                    </div>
+                </article>
+
+                <article class="step reveal">
+                    <div>
+
+                        <h3>Testes e melhorias</h3>
+
+                        <p>
+                            Etapa prevista para avaliar
+                            o funcionamento, identificar
+                            limitações e aperfeiçoar
+                            a acessibilidade da solução.
+                        </p>
+
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CHAMADA FINAL -->
+
+    <section class="section slim">
+        <div class="container">
+
+            <div class="cta-band">
+
+                <div>
+
+                    <h2>
+                        Conheça nosso carrinho em 3D.
+                    </h2>
+
+                    <p>
+                        Explore o modelo interativo do
+                        Mercado Acessível e descubra como
+                        os sensores foram planejados.
+                    </p>
+
+                </div>
+
+                <a href="prototipo.html" class="btn">
+                    Explorar protótipo →
+                </a>
+
+            </div>
+
+        </div>
+    </section>
+
+</main>
+
+<!-- RODAPÉ -->
+
+<footer class="footer">
+    <div class="container">
+
+        <div class="footer-top">
+
+            <div>
+
+                <a href="index.html" class="brand">
+                    <span class="brand-mark">🛒</span>
+                    <span>Mercado<strong>Acessível</strong></span>
+                </a>
+
+                <p>
+                    Uma proposta estudantil que une tecnologia
+                    e acessibilidade para tornar a experiência
+                    de compras mais simples e independente.
+                </p>
+
+            </div>
+
+            <div>
+
+                <h4>Explore</h4>
+
+                <div class="footer-links">
+                    <a href="projeto.html">O projeto</a>
+                    <a href="prototipo.html">Protótipo 3D</a>
+                    <a href="funcionamento.html">Tecnologia</a>
+                    <a href="aplicativo.html">Aplicativo</a>
+                    <a href="galeria.html">Galeria</a>
+                    <a href="mapa.html">Mapa</a>
+                </div>
+
+            </div>
+
+            <div>
+
+                <h4>Sobre o trabalho</h4>
+
+                <div class="footer-links">
+                    <span>Projeto acadêmico</span>
+                    <span>SENAC Rio Grande do Norte</span>
+                    <span>Conceito em desenvolvimento</span>
+                    <a href="galeria.html">Registros e visitas</a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <span>
+                © <span class="year">2026</span>
+                Mercado Acessível. Projeto educacional.
+            </span>
+
+            <span>
+                Tecnologia e inclusão.
+            </span>
+
+        </div>
+
+    </div>
+</footer>
+
+</body>
+</html>
