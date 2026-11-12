@@ -1,0 +1,953 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color" content="#0b2340">
+
+    <meta name="description"
+          content="Galeria do projeto Mercado Acessível: visita ao CADV, entrevistas, modelos do carrinho e circuito eletrônico.">
+
+    <title>Galeria | Mercado Acessível</title>
+
+    <link rel="icon" href="assets/favicon.svg">
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+<a href="#conteudo" class="skip-link">
+    Pular para o conteúdo
+</a>
+
+<div class="topline">
+    Tecnologia, inclusão e autonomia • Projeto acadêmico do SENAC RN
+</div>
+
+<!-- CABEÇALHO -->
+
+<header class="site-header">
+
+    <div class="container header-inner">
+
+        <a href="index.html"
+           class="brand"
+           aria-label="Mercado Acessível - página inicial">
+
+            <span class="brand-mark">🛒</span>
+
+            <span>
+                Mercado<strong>Acessível</strong>
+            </span>
+
+        </a>
+
+        <nav class="site-nav"
+             id="site-nav"
+             aria-label="Navegação principal">
+
+            <a href="index.html">
+                Início
+            </a>
+
+            <a href="projeto.html">
+                O projeto
+            </a>
+
+            <a href="prototipo.html">
+                Protótipo 3D
+            </a>
+
+            <a href="funcionamento.html">
+                Tecnologia
+            </a>
+
+            <a href="aplicativo.html">
+                Aplicativo
+            </a>
+
+            <a href="galeria.html"
+               aria-current="page">
+                Galeria
+            </a>
+
+            <a href="mapa.html">
+                Mapa
+            </a>
+
+        </nav>
+
+        <div class="header-controls">
+
+            <div class="a11y-menu">
+
+                <button type="button"
+                        id="a11y-toggle"
+                        class="icon-btn"
+                        aria-label="Opções de acessibilidade"
+                        aria-controls="a11y-panel"
+                        aria-expanded="false">
+                    ♿
+                </button>
+
+                <div id="a11y-panel"
+                     class="a11y-panel">
+
+                    <p>
+                        <strong>
+                            Acessibilidade do site
+                        </strong>
+                    </p>
+
+                    <div class="a11y-buttons">
+
+                        <button type="button"
+                                data-font="plus">
+                            A+
+                        </button>
+
+                        <button type="button"
+                                data-font="minus">
+                            A−
+                        </button>
+
+                        <button type="button"
+                                id="contrast-toggle">
+                            Contraste
+                        </button>
+
+                        <button type="button"
+                                id="read-page">
+                            Ler página
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <button type="button"
+                    id="nav-toggle"
+                    class="icon-btn menu-toggle"
+                    aria-label="Abrir menu"
+                    aria-controls="site-nav"
+                    aria-expanded="false">
+                ☰
+            </button>
+
+        </div>
+
+    </div>
+
+</header>
+
+<main id="conteudo" tabindex="-1">
+
+    <!-- APRESENTAÇÃO -->
+
+    <section class="page-hero">
+
+        <div class="container">
+
+            <div class="breadcrumbs">
+                <a href="index.html">Início</a>
+                / Galeria
+            </div>
+
+            <span class="kicker">
+                Registros do projeto
+            </span>
+
+            <h1>
+                Nossa trajetória em imagens.
+            </h1>
+
+            <p class="lead">
+
+                Conheça os registros da pesquisa,
+                da visita ao CADV, das entrevistas
+                e do desenvolvimento digital
+                do Mercado Acessível.
+
+            </p>
+
+            <div class="btn-row">
+
+                <a href="#visita-cadv" class="btn">
+                    Ver registros da visita →
+                </a>
+
+                <a href="#carrinho" class="btn outline">
+                    Ver modelos do carrinho
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- VISITA AO CADV -->
+
+    <section class="section white" id="visita-cadv">
+
+        <div class="container">
+
+            <div class="section-head">
+
+                <div>
+
+                    <span class="kicker">
+                        Pesquisa de campo
+                    </span>
+
+                    <h2>
+                        Visita ao CADV
+                    </h2>
+
+                    <p>
+
+                        Registros da visita realizada
+                        durante a pesquisa e o
+                        desenvolvimento do projeto.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="gallery-grid">
+
+                <button class="gallery-item reveal"
+                        type="button"
+                        data-caption="Visita ao CADV — registro 01">
+
+                    <div class="img-shell">
+
+                        <img
+                            src="imagens/visita-cadv-01.jpg"
+                            alt="Primeiro registro da visita ao CADV"
+                            loading="lazy">
+
+                    </div>
+
+                    <span class="gallery-caption">
+                        Visita ao CADV
+                        <small>Registro 01</small>
+                    </span>
+
+                </button>
+
+                <button class="gallery-item reveal"
+                        type="button"
+                        data-caption="Visita ao CADV — registro 02">
+
+                    <div class="img-shell">
+
+                        <img
+                            src="imagens/visita-cadv-02.jpg"
+                            alt="Segundo registro da visita ao CADV"
+                            loading="lazy">
+
+                    </div>
+
+                    <span class="gallery-caption">
+                        Visita ao CADV
+                        <small>Registro 02</small>
+                    </span>
+
+                </button>
+
+                <button class="gallery-item reveal"
+                        type="button"
+                        data-caption="Visita ao CADV — registro 03">
+
+                    <div class="img-shell">
+
+                        <img
+                            src="imagens/visita-cadv-03.jpg"
+                            alt="Terceiro registro da visita ao CADV"
+                            loading="lazy">
+
+                    </div>
+
+                    <span class="gallery-caption">
+                        Visita ao CADV
+                        <small>Registro 03</small>
+                    </span>
+
+                </button>
+
+                <button class="gallery-item reveal"
+                        type="button"
+                        data-caption="Visita ao CADV — registro 04">
+
+                    <div class="img-shell">
+
+                        <img
+                            src="imagens/visita-cadv-04.jpg"
+                            alt="Quarto registro da visita ao CADV"
+                            loading="lazy">
+
+                    </div>
+
+                    <span class="gallery-caption">
+                        Visita ao CADV
+                        <small>Registro 04</small>
+                    </span>
+
+                </button>
+
+                <button class="gallery-item reveal"
+                        type="button"
+                        data-caption="Visita ao CADV — registro 05">
+
+                    <div class="img-shell">
+
+                        <img
+                            src="imagens/visita-cadv-05.jpg"
+                            alt="Quinto registro da visita ao CADV"
+                            loading="lazy">
+
+                    </div>
+
+                    <span class="gallery-caption">
+                        Visita ao CADV
+                        <small>Registro 05</small>
+                    </span>
+
+                </button>
+
+                <button class="gallery-item reveal"
+                        type="button"
+                        data-caption="Visita ao CADV — registro 06">
+
+                    <div class="img-shell">
+
+                        <img
+                            src="imagens/visita-cadv-06.jpg"
+                            alt="Sexto registro da visita ao CADV"
+                            loading="lazy">
+
+                    </div>
+
+                    <span class="gallery-caption">
+                        Visita ao CADV
+                        <small>Registro 06</small>
+                    </span>
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ENTREVISTAS -->
+
+    <section class="section wash" id="entrevistas">
+
+        <div class="container">
+
+            <div class="section-head">
+
+                <div>
+
+                    <span class="kicker">
+                        Escuta e aprendizado
+                    </span>
+
+                    <h2>
+                        Entrevistas e pesquisa
+                    </h2>
+
+                    <p>
+
+                        Imagens que registram
+                        momentos da pesquisa
+                        realizada pelo grupo.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="gallery-grid">
+
+                <button class="gallery-item reveal"
+                        type="button"
+                        data-caption="Entrevista — registro 01">
+
+                    <div class="img-shell">
+
+                        <img
+                            src="imagens/entrevista-01.jpg"
+                            alt="Primeiro registro da entrevista"
+                            loading="lazy">
+
+                    </div>
+
+                    <span class="gallery-caption">
+                        Pesquisa
+                        <small>Registro 01</small>
+                    </span>
+
+                </button>
+
+                <button class="gallery-item reveal"
+                        type="button"
+                        data-caption="Entrevista — registro 02">
+
+                    <div class="img-shell">
+
+                        <img
+                            src="imagens/entrevista-02.jpg"
+                            alt="Segundo registro da entrevista"
+                            loading="lazy">
+
+                    </div>
+
+                    <span class="gallery-caption">
+                        Pesquisa
+                        <small>Registro 02</small>
+                    </span>
+
+                </button>
+
+                <button class="gallery-item reveal"
+                        type="button"
+                        data-caption="Entrevista — registro 03">
+
+                    <div class="img-shell">
+
+                        <img
+                            src="imagens/entrevista-03.jpg"
+                            alt="Terceiro registro da entrevista"
+                            loading="lazy">
+
+                    </div>
+
+                    <span class="gallery-caption">
+                        Pesquisa
+                        <small>Registro 03</small>
+                    </span>
+
+                </button>
+
+                <button class="gallery-item reveal"
+                        type="button"
+                        data-caption="Entrevista — registro 04">
+
+                    <div class="img-shell">
+
+                        <img
+                            src="imagens/entrevista-04.jpg"
+                            alt="Quarto registro da entrevista"
+                            loading="lazy">
+
+                    </div>
+
+                    <span class="gallery-caption">
+                        Pesquisa
+                        <small>Registro 04</small>
+                    </span>
+
+                </button>
+
+                <button class="gallery-item reveal"
+                        type="button"
+                        data-caption="Entrevista — registro 05">
+
+                    <div class="img-shell">
+
+                        <img
+                            src="imagens/entrevista-05.jpg"
+                            alt="Quinto registro da entrevista"
+                            loading="lazy">
+
+                    </div>
+
+                    <span class="gallery-caption">
+                        Pesquisa
+                        <small>Registro 05</small>
+                    </span>
+
+                </button>
+
+                <button class="gallery-item reveal"
+                        type="button"
+                        data-caption="Entrevista — registro 06">
+
+                    <div class="img-shell">
+
+                        <img
+                            src="imagens/entrevista-06.jpg"
+                            alt="Sexto registro da entrevista"
+                            loading="lazy">
+
+                    </div>
+
+                    <span class="gallery-caption">
+                        Pesquisa
+                        <small>Registro 06</small>
+                    </span>
+
+                </button>
+
+                <button class="gallery-item reveal"
+                        type="button"
+                        data-caption="Entrevista — registro 07">
+
+                    <div class="img-shell">
+
+                        <img
+                            src="imagens/entrevista-07.jpg"
+                            alt="Sétimo registro da entrevista"
+                            loading="lazy">
+
+                    </div>
+
+                    <span class="gallery-caption">
+                        Pesquisa
+                        <small>Registro 07</small>
+                    </span>
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- MODELOS DO CARRINHO -->
+
+    <section class="section white" id="carrinho">
+
+        <div class="container">
+
+            <div class="section-head">
+
+                <div>
+
+                    <span class="kicker">
+                        Desenvolvimento digital
+                    </span>
+
+                    <h2>
+                        Modelos do carrinho
+                    </h2>
+
+                    <p>
+
+                        Diferentes representações digitais
+                        da estrutura planejada para
+                        o Mercado Acessível.
+
+                    </p>
+
+                </div>
+
+                <a href="prototipo.html" class="btn outline">
+                    Explorar protótipo 3D →
+                </a>
+
+            </div>
+
+            <div class="gallery-grid">
+
+                <button class="gallery-item reveal"
+                        type="button"
+                        data-caption="Carrinho acessível — modelo 01">
+
+                    <div class="img-shell">
+
+                        <img
+                            class="object-contain"
+                            src="imagens/carrinho-01.png"
+                            alt="Primeira imagem digital do carrinho acessível"
+                            loading="lazy">
+
+                    </div>
+
+                    <span class="gallery-caption">
+                        Carrinho acessível
+                        <small>Modelo 01</small>
+                    </span>
+
+                </button>
+
+                <button class="gallery-item reveal"
+                        type="button"
+                        data-caption="Carrinho acessível — modelo 02">
+
+                    <div class="img-shell">
+
+                        <img
+                            class="object-contain"
+                            src="imagens/carrinho-02.png"
+                            alt="Segunda imagem digital do carrinho acessível"
+                            loading="lazy">
+
+                    </div>
+
+                    <span class="gallery-caption">
+                        Carrinho acessível
+                        <small>Modelo 02</small>
+                    </span>
+
+                </button>
+
+                <button class="gallery-item reveal"
+                        type="button"
+                        data-caption="Carrinho acessível — modelo 03">
+
+                    <div class="img-shell">
+
+                        <img
+                            class="object-contain"
+                            src="imagens/carrinho-03.png"
+                            alt="Terceira imagem digital do carrinho acessível"
+                            loading="lazy">
+
+                    </div>
+
+                    <span class="gallery-caption">
+                        Carrinho acessível
+                        <small>Modelo 03</small>
+                    </span>
+
+                </button>
+
+                <button class="gallery-item reveal"
+                        type="button"
+                        data-caption="Carrinho acessível — modelo 04">
+
+                    <div class="img-shell">
+
+                        <img
+                            class="object-contain"
+                            src="imagens/carrinho-04.png"
+                            alt="Quarta imagem digital do carrinho acessível"
+                            loading="lazy">
+
+                    </div>
+
+                    <span class="gallery-caption">
+                        Carrinho acessível
+                        <small>Modelo 04</small>
+                    </span>
+
+                </button>
+
+                <button class="gallery-item reveal"
+                        type="button"
+                        data-caption="Carrinho acessível — modelo 05">
+
+                    <div class="img-shell">
+
+                        <img
+                            class="object-contain"
+                            src="imagens/carrinho-05.png"
+                            alt="Quinta imagem digital do carrinho acessível"
+                            loading="lazy">
+
+                    </div>
+
+                    <span class="gallery-caption">
+                        Carrinho acessível
+                        <small>Modelo 05</small>
+                    </span>
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CIRCUITO ELETRÔNICO -->
+
+    <section class="section wash" id="circuito">
+
+        <div class="container">
+
+            <div class="section-head">
+
+                <div>
+
+                    <span class="kicker">
+                        Planejamento eletrônico
+                    </span>
+
+                    <h2>
+                        Circuito do projeto
+                    </h2>
+
+                    <p>
+
+                        Representação do esquema eletrônico
+                        utilizado no planejamento
+                        do carrinho acessível.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="gallery-grid">
+
+                <button class="gallery-item reveal"
+                        type="button"
+                        data-caption="Esquema eletrônico do Mercado Acessível">
+
+                    <div class="img-shell">
+
+                        <img
+                            class="object-contain"
+                            src="imagens/esquema-circuito.png"
+                            alt="Esquema do circuito eletrônico do Mercado Acessível"
+                            loading="lazy">
+
+                    </div>
+
+                    <span class="gallery-caption">
+                        Circuito eletrônico
+                        <small>Planejamento do protótipo</small>
+                    </span>
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- SOBRE A GALERIA -->
+
+    <section class="section white">
+
+        <div class="container container-narrow">
+
+            <span class="kicker">
+                Sobre os registros
+            </span>
+
+            <h2>
+                Cada imagem faz parte do nosso aprendizado.
+            </h2>
+
+            <p class="lead">
+
+                As fotografias e representações digitais
+                documentam diferentes etapas do
+                desenvolvimento do Mercado Acessível.
+
+            </p>
+
+            <p>
+
+                A pesquisa de campo, as entrevistas
+                e a elaboração dos modelos contribuem
+                para transformar a proposta em um
+                projeto que considere a acessibilidade
+                desde seu planejamento.
+
+            </p>
+
+            <div class="note blue">
+
+                As imagens do carrinho representam
+                um conceito em desenvolvimento.
+                Elas não comprovam o funcionamento
+                físico dos sensores ou do sistema
+                de alertas.
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CHAMADA FINAL -->
+
+    <section class="section slim">
+
+        <div class="container">
+
+            <div class="cta-band">
+
+                <div>
+
+                    <h2>
+                        Quer conhecer o carrinho em movimento?
+                    </h2>
+
+                    <p>
+
+                        Visite a página do protótipo 3D
+                        para girar o modelo, observar
+                        seus componentes e experimentar
+                        a simulação dos sensores.
+
+                    </p>
+
+                </div>
+
+                <a href="prototipo.html" class="btn">
+                    Abrir protótipo 3D →
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+<!-- VISUALIZADOR DE FOTOS AMPLIADAS -->
+
+<div class="lightbox"
+     id="lightbox"
+     role="dialog"
+     aria-modal="true"
+     aria-label="Visualização ampliada da imagem"
+     aria-hidden="true">
+
+    <button
+        type="button"
+        class="lightbox-close"
+        aria-label="Fechar imagem ampliada">
+        ×
+    </button>
+
+    <div class="lightbox-inner">
+
+        <img
+            alt="Imagem ampliada do projeto Mercado Acessível">
+
+        <p id="lightbox-caption"></p>
+
+    </div>
+
+</div>
+
+<!-- RODAPÉ -->
+
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="footer-top">
+
+            <div>
+
+                <a href="index.html" class="brand">
+
+                    <span class="brand-mark">🛒</span>
+
+                    <span>
+                        Mercado<strong>Acessível</strong>
+                    </span>
+
+                </a>
+
+                <p>
+
+                    Uma proposta estudantil que une
+                    tecnologia e acessibilidade
+                    para tornar a experiência
+                    de compras mais simples.
+
+                </p>
+
+            </div>
+
+            <div>
+
+                <h4>Explore</h4>
+
+                <div class="footer-links">
+
+                    <a href="projeto.html">O projeto</a>
+
+                    <a href="prototipo.html">Protótipo 3D</a>
+
+                    <a href="funcionamento.html">Tecnologia</a>
+
+                    <a href="aplicativo.html">Aplicativo</a>
+
+                    <a href="galeria.html">Galeria</a>
+
+                    <a href="mapa.html">Mapa</a>
+
+                </div>
+
+            </div>
+
+            <div>
+
+                <h4>Sobre o trabalho</h4>
+
+                <div class="footer-links">
+
+                    <span>Projeto acadêmico</span>
+
+                    <span>SENAC Rio Grande do Norte</span>
+
+                    <span>Conceito em desenvolvimento</span>
+
+                    <a href="galeria.html">
+                        Registros e visitas
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <span>
+                © <span class="year">2026</span>
+                Mercado Acessível. Projeto educacional.
+            </span>
+
+            <span>
+                Tecnologia e inclusão.
+            </span>
+
+        </div>
+
+    </div>
+
+</footer>
+
+</body>
+</html>
