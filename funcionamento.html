@@ -1,0 +1,1143 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0b2340">
+
+    <meta name="description"
+          content="Conheça a tecnologia do Mercado Acessível: Arduino, sensores ultrassônicos e alertas de proximidade.">
+
+    <title>Tecnologia | Mercado Acessível</title>
+
+    <link rel="icon" href="assets/favicon.svg">
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+<a href="#conteudo" class="skip-link">
+    Pular para o conteúdo
+</a>
+
+<div class="topline">
+    Tecnologia, inclusão e autonomia • Projeto acadêmico do SENAC RN
+</div>
+
+<!-- CABEÇALHO -->
+
+<header class="site-header">
+
+    <div class="container header-inner">
+
+        <a href="index.html"
+           class="brand"
+           aria-label="Mercado Acessível - página inicial">
+
+            <span class="brand-mark">🛒</span>
+
+            <span>
+                Mercado<strong>Acessível</strong>
+            </span>
+
+        </a>
+
+        <nav class="site-nav"
+             id="site-nav"
+             aria-label="Navegação principal">
+
+            <a href="index.html">Início</a>
+
+            <a href="projeto.html">
+                O projeto
+            </a>
+
+            <a href="prototipo.html">
+                Protótipo 3D
+            </a>
+
+            <a href="funcionamento.html"
+               aria-current="page">
+                Tecnologia
+            </a>
+
+            <a href="aplicativo.html">
+                Aplicativo
+            </a>
+
+            <a href="galeria.html">
+                Galeria
+            </a>
+
+            <a href="mapa.html">
+                Mapa
+            </a>
+
+        </nav>
+
+        <div class="header-controls">
+
+            <div class="a11y-menu">
+
+                <button type="button"
+                        id="a11y-toggle"
+                        class="icon-btn"
+                        aria-label="Opções de acessibilidade"
+                        aria-controls="a11y-panel"
+                        aria-expanded="false">
+
+                    ♿
+
+                </button>
+
+                <div id="a11y-panel"
+                     class="a11y-panel">
+
+                    <p>
+                        <strong>
+                            Acessibilidade do site
+                        </strong>
+                    </p>
+
+                    <div class="a11y-buttons">
+
+                        <button type="button"
+                                data-font="plus">
+                            A+
+                        </button>
+
+                        <button type="button"
+                                data-font="minus">
+                            A−
+                        </button>
+
+                        <button type="button"
+                                id="contrast-toggle">
+                            Contraste
+                        </button>
+
+                        <button type="button"
+                                id="read-page">
+                            Ler página
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <button type="button"
+                    id="nav-toggle"
+                    class="icon-btn menu-toggle"
+                    aria-label="Abrir menu"
+                    aria-controls="site-nav"
+                    aria-expanded="false">
+
+                ☰
+
+            </button>
+
+        </div>
+
+    </div>
+
+</header>
+
+<main id="conteudo" tabindex="-1">
+
+    <!-- APRESENTAÇÃO -->
+
+    <section class="page-hero">
+
+        <div class="container">
+
+            <div class="breadcrumbs">
+
+                <a href="index.html">
+                    Início
+                </a>
+
+                / Tecnologia
+
+            </div>
+
+            <span class="kicker">
+                Como funciona
+            </span>
+
+            <h1>
+                Tecnologia a serviço da acessibilidade.
+            </h1>
+
+            <p class="lead">
+
+                O Mercado Acessível propõe a utilização
+                de sensores ultrassônicos, Arduino e
+                alertas para auxiliar na identificação
+                de obstáculos próximos ao carrinho
+                durante as compras.
+
+            </p>
+
+            <div class="btn-row">
+
+                <a href="#componentes"
+                   class="btn">
+
+                    Conhecer os componentes →
+
+                </a>
+
+                <a href="prototipo.html"
+                   class="btn outline">
+
+                    Explorar carrinho 3D
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- EXPLICAÇÃO GERAL -->
+
+    <section class="section white">
+
+        <div class="container spotlight">
+
+            <div class="reveal">
+
+                <span class="kicker">
+                    Nossa proposta
+                </span>
+
+                <h2>
+                    Um carrinho que percebe obstáculos próximos.
+                </h2>
+
+                <p class="lead">
+
+                    A ideia consiste em equipar um
+                    carrinho de supermercado com três
+                    sensores ultrassônicos, capazes
+                    de medir a distância até objetos
+                    próximos.
+
+                </p>
+
+                <p>
+
+                    As informações dos sensores seriam
+                    enviadas ao Arduino, responsável
+                    por processar os valores e
+                    acionar os dispositivos de alerta.
+
+                </p>
+
+                <p>
+
+                    Quando um obstáculo estiver dentro
+                    da distância de aviso configurada,
+                    o sistema poderá emitir um som
+                    e acender luzes indicativas.
+
+                </p>
+
+                <div class="note blue">
+
+                    <strong>Importante:</strong>
+                    o sistema é uma proposta em
+                    desenvolvimento. A eficiência
+                    dos sensores e dos alertas
+                    dependerá de testes práticos.
+
+                </div>
+
+            </div>
+
+            <div class="stacked-images reveal">
+
+                <img
+                    src="imagens/carrinho-03.png"
+                    alt="Representação digital do carrinho inteligente"
+                    loading="lazy"
+                    style="object-fit:contain;background:#edf3f6">
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- COMPONENTES -->
+
+    <section class="section wash"
+             id="componentes">
+
+        <div class="container">
+
+            <div class="section-head">
+
+                <div>
+
+                    <span class="kicker">
+                        Componentes eletrônicos
+                    </span>
+
+                    <h2>
+                        Conheça as tecnologias do carrinho.
+                    </h2>
+
+                    <p>
+
+                        Cada componente possui uma função
+                        importante no funcionamento
+                        planejado do protótipo.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="grid-3">
+
+                <!-- SENSOR -->
+
+                <article class="feature-card reveal">
+
+                    <div class="feature-icon blue">
+                        📡
+                    </div>
+
+                    <h3>
+                        Sensores ultrassônicos
+                    </h3>
+
+                    <p>
+
+                        Utilizam ondas sonoras de
+                        alta frequência para estimar
+                        a distância entre o sensor
+                        e um obstáculo.
+
+                    </p>
+
+                    <p>
+
+                        O projeto prevê três unidades:
+                        uma frontal e duas laterais.
+
+                    </p>
+
+                </article>
+
+                <!-- ARDUINO -->
+
+                <article class="feature-card reveal">
+
+                    <div class="feature-icon">
+                        ⚙️
+                    </div>
+
+                    <h3>
+                        Arduino
+                    </h3>
+
+                    <p>
+
+                        É a placa de controle
+                        responsável por receber
+                        as informações dos sensores
+                        e executar as instruções
+                        programadas.
+
+                    </p>
+
+                    <p>
+
+                        Conforme a distância medida,
+                        o sistema poderá acionar
+                        os alertas.
+
+                    </p>
+
+                </article>
+
+                <!-- BUZZER -->
+
+                <article class="feature-card reveal">
+
+                    <div class="feature-icon green">
+                        🔊
+                    </div>
+
+                    <h3>
+                        Buzzer
+                    </h3>
+
+                    <p>
+
+                        É um componente eletrônico
+                        capaz de emitir sinais sonoros.
+
+                    </p>
+
+                    <p>
+
+                        No protótipo, poderá ser utilizado
+                        para avisar sobre a proximidade
+                        de obstáculos.
+
+                    </p>
+
+                </article>
+
+                <!-- LED -->
+
+                <article class="feature-card reveal">
+
+                    <div class="feature-icon">
+                        💡
+                    </div>
+
+                    <h3>
+                        LEDs de alerta
+                    </h3>
+
+                    <p>
+
+                        São pequenas luzes que
+                        indicam visualmente o
+                        estado do sistema.
+
+                    </p>
+
+                    <p>
+
+                        Poderão funcionar em conjunto
+                        com o aviso sonoro, oferecendo
+                        uma forma adicional de alerta.
+
+                    </p>
+
+                </article>
+
+                <!-- ALIMENTAÇÃO -->
+
+                <article class="feature-card reveal">
+
+                    <div class="feature-icon blue">
+                        🔋
+                    </div>
+
+                    <h3>
+                        Alimentação elétrica
+                    </h3>
+
+                    <p>
+
+                        Os componentes precisam de
+                        uma fonte de energia
+                        adequada para funcionar.
+
+                    </p>
+
+                    <p>
+
+                        A forma de alimentação
+                        deverá ser definida
+                        durante a montagem do protótipo.
+
+                    </p>
+
+                </article>
+
+                <!-- APLICATIVO -->
+
+                <article class="feature-card reveal">
+
+                    <div class="feature-icon green">
+                        📱
+                    </div>
+
+                    <h3>
+                        Aplicativo de compras
+                    </h3>
+
+                    <p>
+
+                        Complementa a proposta
+                        com ferramentas de organização,
+                        criação de listas e
+                        acompanhamento de gastos.
+
+                    </p>
+
+                    <a href="aplicativo.html">
+                        Conhecer aplicativo →
+                    </a>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- COMO FUNCIONA -->
+
+    <section class="section white">
+
+        <div class="container">
+
+            <div class="section-head">
+
+                <div>
+
+                    <span class="kicker">
+                        Funcionamento do sistema
+                    </span>
+
+                    <h2>
+                        Do obstáculo ao alerta.
+                    </h2>
+
+                    <p>
+
+                        Entenda, passo a passo,
+                        como o sistema foi planejado.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="steps">
+
+                <article class="step reveal">
+
+                    <div>
+
+                        <h3>
+                            Emissão do sinal ultrassônico
+                        </h3>
+
+                        <p>
+
+                            O sensor emite uma onda
+                            ultrassônica em direção
+                            ao ambiente.
+
+                        </p>
+
+                    </div>
+
+                </article>
+
+                <article class="step reveal">
+
+                    <div>
+
+                        <h3>
+                            Recebimento do eco
+                        </h3>
+
+                        <p>
+
+                            Quando a onda encontra
+                            uma superfície que a reflete,
+                            parte dela retorna ao sensor.
+
+                        </p>
+
+                    </div>
+
+                </article>
+
+                <article class="step reveal">
+
+                    <div>
+
+                        <h3>
+                            Cálculo da distância
+                        </h3>
+
+                        <p>
+
+                            O sistema utiliza o tempo
+                            de ida e volta da onda
+                            sonora para estimar
+                            a distância do objeto.
+
+                        </p>
+
+                    </div>
+
+                </article>
+
+                <article class="step reveal">
+
+                    <div>
+
+                        <h3>
+                            Processamento no Arduino
+                        </h3>
+
+                        <p>
+
+                            A placa recebe os dados
+                            e compara a distância
+                            medida com os limites
+                            definidos na programação.
+
+                        </p>
+
+                    </div>
+
+                </article>
+
+                <article class="step reveal">
+
+                    <div>
+
+                        <h3>
+                            Emissão do alerta
+                        </h3>
+
+                        <p>
+
+                            Caso a distância esteja
+                            dentro da faixa de aviso,
+                            o sistema poderá acionar
+                            o buzzer e os LEDs.
+
+                        </p>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- SIMULAÇÃO -->
+
+    <section class="section wash">
+
+        <div class="container split-info">
+
+            <div class="reveal">
+
+                <span class="kicker">
+                    Demonstração digital
+                </span>
+
+                <h2>
+                    Como os alertas podem funcionar?
+                </h2>
+
+                <p class="lead">
+
+                    Criamos uma simulação no modelo 3D
+                    para demonstrar diferentes
+                    situações de proximidade.
+
+                </p>
+
+                <p>
+
+                    Nela, é possível ajustar
+                    virtualmente a distância
+                    de um obstáculo e observar
+                    a mudança dos alertas.
+
+                </p>
+
+                <p>
+
+                    As faixas utilizadas são
+                    apenas exemplos ilustrativos.
+                    Os limites reais precisarão
+                    ser definidos por meio de
+                    testes com o equipamento.
+
+                </p>
+
+                <a href="prototipo.html"
+                   class="btn">
+
+                    Testar simulação 3D →
+
+                </a>
+
+            </div>
+
+            <div class="feature-card reveal">
+
+                <h3>
+                    Exemplo de faixas de distância
+                </h3>
+
+                <div class="spec-list">
+
+                    <div class="spec-row">
+
+                        <strong>
+                            100 cm ou mais
+                        </strong>
+
+                        <span class="tag">
+                            Sem alerta
+                        </span>
+
+                    </div>
+
+                    <div class="spec-row">
+
+                        <strong>
+                            De 60 a 99 cm
+                        </strong>
+
+                        <span class="tag">
+                            Atenção
+                        </span>
+
+                    </div>
+
+                    <div class="spec-row">
+
+                        <strong>
+                            Menos de 60 cm
+                        </strong>
+
+                        <span class="tag">
+                            Alerta próximo
+                        </span>
+
+                    </div>
+
+                </div>
+
+                <p class="small muted"
+                   style="margin-top:20px">
+
+                    Os valores acima pertencem
+                    à simulação digital e não
+                    representam medições já
+                    validadas no carrinho físico.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CIRCUITO -->
+
+    <section class="section white"
+             id="circuito">
+
+        <div class="container">
+
+            <div class="section-head">
+
+                <div>
+
+                    <span class="kicker">
+                        Planejamento eletrônico
+                    </span>
+
+                    <h2>
+                        Esquema do circuito.
+                    </h2>
+
+                    <p>
+
+                        O circuito representa
+                        o planejamento das conexões
+                        entre os componentes
+                        eletrônicos do carrinho.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="feature-card reveal"
+                 style="text-align:center">
+
+                <img
+                    src="imagens/esquema-circuito.png"
+                    alt="Esquema de circuito eletrônico do Mercado Acessível"
+                    loading="lazy"
+                    style="
+                        width:100%;
+                        max-height:650px;
+                        object-fit:contain;
+                        margin:auto;
+                        background:#f1f6f9;
+                        border-radius:16px;
+                        padding:15px;
+                    ">
+
+                <p class="muted small"
+                   style="margin-top:22px">
+
+                    Representação do circuito
+                    planejado para o projeto.
+
+                </p>
+
+            </div>
+
+            <div class="note blue"
+                 style="margin-top:25px">
+
+                <strong>
+                    Atenção:
+                </strong>
+
+                As conexões e a alimentação
+                elétrica precisam ser verificadas
+                antes da montagem física,
+                conforme as especificações
+                dos componentes utilizados.
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- DIFERENCIAIS -->
+
+    <section class="section wash">
+
+        <div class="container">
+
+            <div class="section-head">
+
+                <div>
+
+                    <span class="kicker">
+                        Acessibilidade
+                    </span>
+
+                    <h2>
+                        Por que essa tecnologia?
+                    </h2>
+
+                    <p>
+
+                        A proposta combina diferentes
+                        recursos para auxiliar
+                        durante as compras.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="grid-3">
+
+                <article class="feature-card reveal">
+
+                    <div class="feature-icon blue">
+                        🛒
+                    </div>
+
+                    <h3>
+                        Orientação durante o percurso
+                    </h3>
+
+                    <p>
+
+                        Os sensores podem oferecer
+                        informações complementares
+                        sobre obstáculos próximos
+                        ao carrinho.
+
+                    </p>
+
+                </article>
+
+                <article class="feature-card reveal">
+
+                    <div class="feature-icon">
+                        🔔
+                    </div>
+
+                    <h3>
+                        Avisos de proximidade
+                    </h3>
+
+                    <p>
+
+                        Os alertas sonoros e luminosos
+                        podem ajudar a indicar
+                        situações que exigem atenção.
+
+                    </p>
+
+                </article>
+
+                <article class="feature-card reveal">
+
+                    <div class="feature-icon green">
+                        📋
+                    </div>
+
+                    <h3>
+                        Organização das compras
+                    </h3>
+
+                    <p>
+
+                        O aplicativo permite demonstrar
+                        como listas, valores e orçamento
+                        podem ser organizados
+                        em uma interface digital.
+
+                    </p>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- LIMITAÇÕES -->
+
+    <section class="section white">
+
+        <div class="container container-narrow">
+
+            <span class="kicker">
+                Desenvolvimento responsável
+            </span>
+
+            <h2>
+                Testar também faz parte de inovar.
+            </h2>
+
+            <p class="lead">
+
+                Sensores ultrassônicos possuem
+                limitações: determinados formatos,
+                materiais e posições de obstáculos
+                podem dificultar a detecção.
+
+            </p>
+
+            <p>
+
+                Por isso, o Mercado Acessível
+                não deve ser considerado
+                um substituto para bengalas,
+                orientação humana ou outros
+                recursos de mobilidade.
+
+            </p>
+
+            <p>
+
+                O projeto deverá passar por testes
+                para avaliar a precisão das leituras,
+                a utilidade dos alertas e a
+                experiência das pessoas que
+                poderão utilizar a solução.
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- PRÓXIMA PÁGINA -->
+
+    <section class="section slim">
+
+        <div class="container">
+
+            <div class="cta-band">
+
+                <div>
+
+                    <h2>
+                        Conheça também nosso aplicativo.
+                    </h2>
+
+                    <p>
+
+                        Experimente uma demonstração
+                        digital para criar listas,
+                        calcular gastos e ouvir
+                        os produtos cadastrados.
+
+                    </p>
+
+                </div>
+
+                <a href="aplicativo.html"
+                   class="btn">
+
+                    Abrir aplicativo →
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+<!-- RODAPÉ -->
+
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="footer-top">
+
+            <div>
+
+                <a href="index.html" class="brand">
+
+                    <span class="brand-mark">
+                        🛒
+                    </span>
+
+                    <span>
+                        Mercado<strong>Acessível</strong>
+                    </span>
+
+                </a>
+
+                <p>
+
+                    Uma proposta estudantil que une
+                    tecnologia e acessibilidade para
+                    tornar a experiência de compras
+                    mais simples e independente.
+
+                </p>
+
+            </div>
+
+            <div>
+
+                <h4>
+                    Explore
+                </h4>
+
+                <div class="footer-links">
+
+                    <a href="projeto.html">
+                        O projeto
+                    </a>
+
+                    <a href="prototipo.html">
+                        Protótipo 3D
+                    </a>
+
+                    <a href="funcionamento.html">
+                        Tecnologia
+                    </a>
+
+                    <a href="aplicativo.html">
+                        Aplicativo
+                    </a>
+
+                    <a href="galeria.html">
+                        Galeria
+                    </a>
+
+                    <a href="mapa.html">
+                        Mapa
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div>
+
+                <h4>
+                    Sobre o trabalho
+                </h4>
+
+                <div class="footer-links">
+
+                    <span>
+                        Projeto acadêmico
+                    </span>
+
+                    <span>
+                        SENAC Rio Grande do Norte
+                    </span>
+
+                    <span>
+                        Conceito em desenvolvimento
+                    </span>
+
+                    <a href="galeria.html">
+                        Registros e visitas
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <span>
+                © <span class="year">2026</span>
+                Mercado Acessível. Projeto educacional.
+            </span>
+
+            <span>
+                Tecnologia e inclusão.
+            </span>
+
+        </div>
+
+    </div>
+
+</footer>
+
+</body>
+</html>
