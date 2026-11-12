@@ -1,0 +1,762 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0b2340">
+
+    <meta name="description"
+          content="Explore supermercados de Mossoró/RN e conheça as possibilidades de aplicação do Mercado Acessível.">
+
+    <title>Mapa | Mercado Acessível</title>
+
+    <link rel="icon" href="assets/favicon.svg">
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+<a href="#conteudo" class="skip-link">
+    Pular para o conteúdo
+</a>
+
+<div class="topline">
+    Tecnologia, inclusão e autonomia • Projeto acadêmico do SENAC RN
+</div>
+
+<!-- CABEÇALHO -->
+
+<header class="site-header">
+
+    <div class="container header-inner">
+
+        <a href="index.html"
+           class="brand"
+           aria-label="Mercado Acessível - página inicial">
+
+            <span class="brand-mark">🛒</span>
+
+            <span>
+                Mercado<strong>Acessível</strong>
+            </span>
+
+        </a>
+
+        <nav class="site-nav"
+             id="site-nav"
+             aria-label="Navegação principal">
+
+            <a href="index.html">Início</a>
+
+            <a href="projeto.html">O projeto</a>
+
+            <a href="prototipo.html">Protótipo 3D</a>
+
+            <a href="funcionamento.html">Tecnologia</a>
+
+            <a href="aplicativo.html">Aplicativo</a>
+
+            <a href="galeria.html">Galeria</a>
+
+            <a href="mapa.html"
+               aria-current="page">
+                Mapa
+            </a>
+
+        </nav>
+
+        <div class="header-controls">
+
+            <div class="a11y-menu">
+
+                <button type="button"
+                        id="a11y-toggle"
+                        class="icon-btn"
+                        aria-label="Opções de acessibilidade"
+                        aria-controls="a11y-panel"
+                        aria-expanded="false">
+                    ♿
+                </button>
+
+                <div id="a11y-panel"
+                     class="a11y-panel">
+
+                    <p>
+                        <strong>
+                            Acessibilidade do site
+                        </strong>
+                    </p>
+
+                    <div class="a11y-buttons">
+
+                        <button type="button"
+                                data-font="plus">
+                            A+
+                        </button>
+
+                        <button type="button"
+                                data-font="minus">
+                            A−
+                        </button>
+
+                        <button type="button"
+                                id="contrast-toggle">
+                            Contraste
+                        </button>
+
+                        <button type="button"
+                                id="read-page">
+                            Ler página
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <button type="button"
+                    id="nav-toggle"
+                    class="icon-btn menu-toggle"
+                    aria-label="Abrir menu"
+                    aria-controls="site-nav"
+                    aria-expanded="false">
+                ☰
+            </button>
+
+        </div>
+
+    </div>
+
+</header>
+
+<main id="conteudo" tabindex="-1">
+
+    <!-- APRESENTAÇÃO -->
+
+    <section class="page-hero">
+
+        <div class="container">
+
+            <div class="breadcrumbs">
+
+                <a href="index.html">Início</a>
+                / Mapa
+
+            </div>
+
+            <span class="kicker">
+                Nossa realidade local
+            </span>
+
+            <h1>
+                Acessibilidade nos supermercados de Mossoró.
+            </h1>
+
+            <p class="lead">
+
+                O Mercado Acessível é uma proposta
+                desenvolvida considerando o cotidiano
+                de quem realiza compras em supermercados.
+
+                Nesta página, você pode explorar
+                estabelecimentos de Mossoró,
+                no Rio Grande do Norte.
+
+            </p>
+
+            <div class="btn-row">
+
+                <a href="#mapa-interativo" class="btn">
+                    Explorar mapa →
+                </a>
+
+                <a href="#aplicacao" class="btn outline">
+                    Conhecer a proposta
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- MAPA INTERATIVO -->
+
+    <section class="section white"
+             id="mapa-interativo">
+
+        <div class="container">
+
+            <div class="section-head">
+
+                <div>
+
+                    <span class="kicker">
+                        Localização
+                    </span>
+
+                    <h2>
+                        Supermercados em Mossoró/RN.
+                    </h2>
+
+                    <p>
+
+                        Explore o mapa, aproxime a
+                        visualização e consulte
+                        estabelecimentos comerciais
+                        da cidade.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="map-frame reveal">
+
+                <iframe
+                    title="Mapa de supermercados em Mossoró, Rio Grande do Norte"
+                    src="https://www.google.com/maps?q=supermercados%20em%20Mossor%C3%B3%20RN&output=embed"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    allowfullscreen>
+                </iframe>
+
+            </div>
+
+            <div class="btn-row">
+
+                <a
+                    href="https://www.google.com/maps/search/?api=1&query=supermercados+Mossor%C3%B3+RN"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn">
+
+                    Abrir no Google Maps →
+
+                </a>
+
+            </div>
+
+            <div class="note blue"
+                 style="margin-top:25px">
+
+                <strong>Importante:</strong>
+
+                O mapa apresenta resultados de
+                pesquisa do Google Maps.
+
+                Os estabelecimentos exibidos não
+                são necessariamente parceiros
+                do Mercado Acessível e não possuem,
+                por esse motivo, o carrinho
+                desenvolvido pelo projeto.
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- APLICAÇÃO DO PROJETO -->
+
+    <section class="section wash"
+             id="aplicacao">
+
+        <div class="container">
+
+            <div class="section-head">
+
+                <div>
+
+                    <span class="kicker">
+                        Possibilidades de aplicação
+                    </span>
+
+                    <h2>
+                        Como o projeto poderia ajudar?
+                    </h2>
+
+                    <p>
+
+                        Pensamos em uma solução
+                        que pudesse ser utilizada
+                        em diferentes supermercados,
+                        respeitando a estrutura
+                        e as necessidades de cada local.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="grid-3">
+
+                <article class="feature-card reveal">
+
+                    <div class="feature-icon blue">
+                        🛒
+                    </div>
+
+                    <h3>
+                        Compras com mais autonomia
+                    </h3>
+
+                    <p>
+
+                        O carrinho propõe recursos
+                        de orientação para auxiliar
+                        pessoas durante o percurso
+                        pelos corredores.
+
+                    </p>
+
+                </article>
+
+                <article class="feature-card reveal">
+
+                    <div class="feature-icon">
+                        📡
+                    </div>
+
+                    <h3>
+                        Identificação de obstáculos
+                    </h3>
+
+                    <p>
+
+                        Os sensores ultrassônicos
+                        poderiam informar sobre
+                        objetos próximos à frente
+                        e nas laterais do carrinho.
+
+                    </p>
+
+                </article>
+
+                <article class="feature-card reveal">
+
+                    <div class="feature-icon green">
+                        📱
+                    </div>
+
+                    <h3>
+                        Organização dos produtos
+                    </h3>
+
+                    <p>
+
+                        O aplicativo poderia facilitar
+                        a criação de listas e o
+                        acompanhamento dos valores
+                        durante as compras.
+
+                    </p>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- DESAFIOS DOS SUPERMERCADOS -->
+
+    <section class="section white">
+
+        <div class="container split-info">
+
+            <div class="reveal">
+
+                <span class="kicker">
+                    Inclusão no comércio
+                </span>
+
+                <h2>
+                    Um supermercado mais acessível começa pelo ambiente.
+                </h2>
+
+                <p class="lead">
+
+                    A acessibilidade não depende
+                    apenas de tecnologias digitais.
+
+                </p>
+
+                <p>
+
+                    Corredores organizados,
+                    sinalização adequada,
+                    atendimento acessível
+                    e equipamentos adaptados
+                    podem contribuir para
+                    uma experiência de compra
+                    mais inclusiva.
+
+                </p>
+
+                <p>
+
+                    O Mercado Acessível busca
+                    fazer parte dessa discussão,
+                    apresentando uma solução
+                    tecnológica complementar.
+
+                </p>
+
+            </div>
+
+            <div class="feature-card reveal">
+
+                <h3>
+                    Pontos importantes para avaliar
+                </h3>
+
+                <div class="spec-list">
+
+                    <div class="spec-row">
+                        <strong>
+                            Espaço de circulação
+                        </strong>
+
+                        <span class="tag">
+                            Estrutura
+                        </span>
+                    </div>
+
+                    <div class="spec-row">
+                        <strong>
+                            Obstáculos nos corredores
+                        </strong>
+
+                        <span class="tag">
+                            Segurança
+                        </span>
+                    </div>
+
+                    <div class="spec-row">
+                        <strong>
+                            Informação sobre produtos
+                        </strong>
+
+                        <span class="tag">
+                            Comunicação
+                        </span>
+                    </div>
+
+                    <div class="spec-row">
+                        <strong>
+                            Recursos de orientação
+                        </strong>
+
+                        <span class="tag">
+                            Acessibilidade
+                        </span>
+                    </div>
+
+                    <div class="spec-row">
+                        <strong>
+                            Atendimento ao público
+                        </strong>
+
+                        <span class="tag">
+                            Inclusão
+                        </span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- PROJETO LOCAL -->
+
+    <section class="section wash">
+
+        <div class="container spotlight">
+
+            <div class="stacked-images reveal">
+
+                <img
+                    src="imagens/visita-cadv-02.jpg"
+                    alt="Registro da pesquisa de campo do Mercado Acessível"
+                    loading="lazy">
+
+            </div>
+
+            <div class="reveal">
+
+                <span class="kicker">
+                    Pesquisa e desenvolvimento
+                </span>
+
+                <h2>
+                    Uma ideia construída a partir da realidade local.
+                </h2>
+
+                <p class="lead">
+
+                    O projeto busca compreender
+                    dificuldades reais relacionadas
+                    à acessibilidade durante
+                    as compras.
+
+                </p>
+
+                <p>
+
+                    A visita ao CADV foi uma
+                    das etapas de pesquisa
+                    realizadas pelo grupo,
+                    contribuindo para reflexões
+                    sobre autonomia e inclusão.
+
+                </p>
+
+                <p>
+
+                    A proposta ainda precisará
+                    de testes e avaliações
+                    antes de uma possível
+                    aplicação em supermercados.
+
+                </p>
+
+                <a href="projeto.html" class="btn">
+
+                    Conhecer nossa pesquisa →
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- PERGUNTAS FREQUENTES -->
+
+    <section class="section white">
+
+        <div class="container container-narrow">
+
+            <span class="kicker">
+                Dúvidas frequentes
+            </span>
+
+            <h2>
+                Perguntas sobre o mapa e o projeto.
+            </h2>
+
+            <details class="faq-item">
+
+                <summary>
+                    Os supermercados do mapa já possuem o carrinho?
+                </summary>
+
+                <p>
+
+                    Não. O mapa mostra estabelecimentos
+                    encontrados por uma pesquisa
+                    no Google Maps.
+
+                    O Mercado Acessível ainda
+                    é um projeto em desenvolvimento.
+
+                </p>
+
+            </details>
+
+            <details class="faq-item">
+
+                <summary>
+                    O projeto será instalado em algum supermercado?
+                </summary>
+
+                <p>
+
+                    Ainda não há uma instalação
+                    confirmada. Uma possível aplicação
+                    dependerá do desenvolvimento
+                    do equipamento, de testes
+                    e de acordos com estabelecimentos.
+
+                </p>
+
+            </details>
+
+            <details class="faq-item">
+
+                <summary>
+                    O mapa mostra a localização em tempo real?
+                </summary>
+
+                <p>
+
+                    O mapa permite consultar
+                    estabelecimentos pelo Google Maps.
+                    Ele não acompanha a posição
+                    do carrinho e não representa
+                    um sistema de navegação interna.
+
+                </p>
+
+            </details>
+
+        </div>
+
+    </section>
+
+    <!-- CHAMADA FINAL -->
+
+    <section class="section slim">
+
+        <div class="container">
+
+            <div class="cta-band">
+
+                <div>
+
+                    <h2>
+                        Conheça nossa proposta de acessibilidade.
+                    </h2>
+
+                    <p>
+
+                        Explore o carrinho em 3D
+                        e descubra como os sensores
+                        e alertas foram planejados
+                        para auxiliar nas compras.
+
+                    </p>
+
+                </div>
+
+                <a href="prototipo.html" class="btn">
+                    Explorar protótipo 3D →
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+<!-- RODAPÉ -->
+
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="footer-top">
+
+            <div>
+
+                <a href="index.html" class="brand">
+
+                    <span class="brand-mark">🛒</span>
+
+                    <span>
+                        Mercado<strong>Acessível</strong>
+                    </span>
+
+                </a>
+
+                <p>
+
+                    Uma proposta estudantil
+                    que une tecnologia e
+                    acessibilidade para
+                    tornar as compras mais
+                    organizadas e independentes.
+
+                </p>
+
+            </div>
+
+            <div>
+
+                <h4>Explore</h4>
+
+                <div class="footer-links">
+
+                    <a href="projeto.html">O projeto</a>
+
+                    <a href="prototipo.html">Protótipo 3D</a>
+
+                    <a href="funcionamento.html">Tecnologia</a>
+
+                    <a href="aplicativo.html">Aplicativo</a>
+
+                    <a href="galeria.html">Galeria</a>
+
+                    <a href="mapa.html">Mapa</a>
+
+                </div>
+
+            </div>
+
+            <div>
+
+                <h4>Sobre o trabalho</h4>
+
+                <div class="footer-links">
+
+                    <span>Projeto acadêmico</span>
+
+                    <span>SENAC Rio Grande do Norte</span>
+
+                    <span>Conceito em desenvolvimento</span>
+
+                    <a href="galeria.html">
+                        Registros e visitas
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <span>
+                © <span class="year">2026</span>
+                Mercado Acessível. Projeto educacional.
+            </span>
+
+            <span>
+                Tecnologia e inclusão.
+            </span>
+
+        </div>
+
+    </div>
+
+</footer>
+
+</body>
+</html>
