@@ -1,0 +1,711 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0b2340">
+
+    <meta name="description"
+          content="Explore o protótipo 3D interativo do carrinho Mercado Acessível.">
+
+    <title>Protótipo 3D | Mercado Acessível</title>
+
+    <link rel="icon" href="assets/favicon.svg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js" defer></script>
+    <script type="module" src="modelo3d.js"></script>
+</head>
+
+<body>
+
+<a href="#conteudo" class="skip-link">
+    Pular para o conteúdo
+</a>
+
+<div class="topline">
+    Tecnologia, inclusão e autonomia • Projeto acadêmico do SENAC RN
+</div>
+
+<!-- CABEÇALHO -->
+
+<header class="site-header">
+    <div class="container header-inner">
+
+        <a href="index.html" class="brand">
+            <span class="brand-mark">🛒</span>
+            <span>Mercado<strong>Acessível</strong></span>
+        </a>
+
+        <nav class="site-nav"
+             id="site-nav"
+             aria-label="Navegação principal">
+
+            <a href="index.html">Início</a>
+            <a href="projeto.html">O projeto</a>
+            <a href="prototipo.html" aria-current="page">Protótipo 3D</a>
+            <a href="funcionamento.html">Tecnologia</a>
+            <a href="aplicativo.html">Aplicativo</a>
+            <a href="galeria.html">Galeria</a>
+            <a href="mapa.html">Mapa</a>
+
+        </nav>
+
+        <div class="header-controls">
+
+            <div class="a11y-menu">
+
+                <button type="button"
+                        id="a11y-toggle"
+                        class="icon-btn"
+                        aria-label="Opções de acessibilidade"
+                        aria-controls="a11y-panel"
+                        aria-expanded="false">
+                    ♿
+                </button>
+
+                <div id="a11y-panel" class="a11y-panel">
+
+                    <p>
+                        <strong>Acessibilidade do site</strong>
+                    </p>
+
+                    <div class="a11y-buttons">
+
+                        <button type="button" data-font="plus">
+                            A+
+                        </button>
+
+                        <button type="button" data-font="minus">
+                            A−
+                        </button>
+
+                        <button type="button" id="contrast-toggle">
+                            Contraste
+                        </button>
+
+                        <button type="button" id="read-page">
+                            Ler página
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <button type="button"
+                    id="nav-toggle"
+                    class="icon-btn menu-toggle"
+                    aria-label="Abrir menu"
+                    aria-controls="site-nav"
+                    aria-expanded="false">
+                ☰
+            </button>
+
+        </div>
+
+    </div>
+</header>
+
+<main id="conteudo" tabindex="-1">
+
+    <!-- APRESENTAÇÃO -->
+
+    <section class="page-hero">
+
+        <div class="container">
+
+            <div class="breadcrumbs">
+                <a href="index.html">Início</a>
+                /
+                Protótipo 3D
+            </div>
+
+            <span class="kicker">
+                Protótipo digital interativo
+            </span>
+
+            <h1>
+                Explore nosso carrinho em 3D.
+            </h1>
+
+            <p class="lead">
+                Conheça o protótipo do Mercado Acessível.
+                Gire o carrinho, aproxime a visualização,
+                explore seus componentes e descubra como
+                funcionarão os sensores de proximidade.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- VISUALIZADOR 3D -->
+
+    <section class="section slim white">
+
+        <div class="container">
+
+            <div class="viewer-layout">
+
+                <!-- ÁREA DO MODELO 3D -->
+
+                <div class="viewer-panel"
+                     id="viewer-3d"
+                     tabindex="0"
+                     aria-label="Visualização interativa em 3D do carrinho acessível">
+
+                    <div class="viewer-placeholder"
+                         id="viewer-placeholder">
+
+                        <img
+                            src="imagens/carrinho-01.png"
+                            alt="Modelo digital do carrinho acessível">
+
+                        <p>
+                            Carregando o modelo 3D...
+                            Verifique sua conexão com a internet
+                            caso a visualização não apareça.
+                        </p>
+
+                    </div>
+
+                    <div class="viewer-tag">
+                        MODELO CONCEITUAL 3D
+                    </div>
+
+                    <div class="viewer-bottom">
+                        Arraste para girar • Role para aproximar
+                    </div>
+
+                </div>
+
+                <!-- PAINEL DE CONTROLES -->
+
+                <div class="viewer-side">
+
+                    <!-- ÂNGULOS -->
+
+                    <div class="view-card">
+
+                        <h3>
+                            Escolha um ângulo
+                        </h3>
+
+                        <p>
+                            Observe o carrinho de diferentes
+                            perspectivas.
+                        </p>
+
+                        <div class="view-actions">
+
+                            <button type="button"
+                                    data-view="perspective"
+                                    class="active">
+                                Perspectiva
+                            </button>
+
+                            <button type="button"
+                                    data-view="front">
+                                Frente
+                            </button>
+
+                            <button type="button"
+                                    data-view="side">
+                                Lateral
+                            </button>
+
+                            <button type="button"
+                                    data-view="back">
+                                Traseira
+                            </button>
+
+                        </div>
+
+                        <label class="toggle-line"
+                               style="margin-top:20px">
+
+                            <input type="checkbox"
+                                   id="spin-toggle"
+                                   checked>
+
+                            Girar automaticamente
+
+                        </label>
+
+                        <label class="toggle-line"
+                               style="margin-top:12px">
+
+                            <input type="checkbox"
+                                   id="beam-toggle"
+                                   checked>
+
+                            Mostrar área ilustrativa dos sensores
+
+                        </label>
+
+                    </div>
+
+                    <!-- COMPONENTES DO CARRINHO -->
+
+                    <div class="view-card">
+
+                        <h3>
+                            Conheça os componentes
+                        </h3>
+
+                        <p>
+                            Selecione uma parte para destacar
+                            sua posição no modelo.
+                        </p>
+
+                        <button class="part-button active"
+                                type="button"
+                                data-part="all">
+
+                            <span class="part-dot"></span>
+                            Carrinho completo
+
+                        </button>
+
+                        <button class="part-button"
+                                type="button"
+                                data-part="sensors">
+
+                            <span class="part-dot blue"></span>
+                            Sensores de proximidade
+
+                        </button>
+
+                        <button class="part-button"
+                                type="button"
+                                data-part="alerts">
+
+                            <span class="part-dot red"></span>
+                            Luzes de alerta
+
+                        </button>
+
+                        <button class="part-button"
+                                type="button"
+                                data-part="screen">
+
+                            <span class="part-dot green"></span>
+                            Tela ilustrativa
+
+                        </button>
+
+                        <button class="part-button"
+                                type="button"
+                                data-part="wheels">
+
+                            <span class="part-dot"></span>
+                            Rodas e estrutura
+
+                        </button>
+
+                        <p id="part-description"
+                           aria-live="polite"
+                           style="margin-top:15px">
+
+                            Modelo digital do carrinho.
+                            Selecione uma parte para conhecer
+                            sua função.
+
+                        </p>
+
+                    </div>
+
+                    <!-- SIMULADOR DE DISTÂNCIA -->
+
+                    <div class="view-card">
+
+                        <h3>
+                            Simule um obstáculo
+                        </h3>
+
+                        <p>
+                            Ajuste a distância para visualizar
+                            como os alertas poderiam funcionar.
+                        </p>
+
+                        <div class="range-wrap">
+
+                            <input type="range"
+                                   id="distance-range"
+                                   min="20"
+                                   max="200"
+                                   step="10"
+                                   value="120"
+                                   aria-label="Distância simulada de um obstáculo">
+
+                            <strong id="distance-label">
+                                120 cm
+                            </strong>
+
+                        </div>
+
+                        <p id="distance-status"
+                           aria-live="polite">
+
+                            <strong>
+                                Distância simulada:
+                            </strong>
+
+                            Sem alerta.
+
+                        </p>
+
+                        <p class="small muted">
+                            Esta é uma demonstração digital,
+                            não uma medição real dos sensores.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="note blue"
+                 style="margin-top:23px">
+
+                <strong>
+                    Sobre o protótipo:
+                </strong>
+
+                O carrinho 3D representa a proposta
+                do Mercado Acessível. Seus movimentos
+                e alertas são simulações visuais, não
+                testes físicos do equipamento.
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- SENSORES -->
+
+    <section class="section wash">
+
+        <div class="container">
+
+            <div class="section-head">
+
+                <div>
+
+                    <span class="kicker">
+                        Tecnologia do carrinho
+                    </span>
+
+                    <h2>
+                        Três sensores. Mais orientação.
+                    </h2>
+
+                    <p>
+                        A proposta utiliza sensores
+                        ultrassônicos em diferentes
+                        posições do carrinho.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="grid-3">
+
+                <article class="feature-card reveal">
+
+                    <div class="feature-icon blue">
+                        📡
+                    </div>
+
+                    <h3>
+                        Sensor frontal
+                    </h3>
+
+                    <p>
+                        Identifica obstáculos à frente
+                        do carrinho, como objetos
+                        presentes no corredor.
+                    </p>
+
+                </article>
+
+                <article class="feature-card reveal">
+
+                    <div class="feature-icon blue">
+                        📡
+                    </div>
+
+                    <h3>
+                        Sensor lateral esquerdo
+                    </h3>
+
+                    <p>
+                        Auxilia na identificação de
+                        objetos próximos ao lado
+                        esquerdo da estrutura.
+                    </p>
+
+                </article>
+
+                <article class="feature-card reveal">
+
+                    <div class="feature-icon blue">
+                        📡
+                    </div>
+
+                    <h3>
+                        Sensor lateral direito
+                    </h3>
+
+                    <p>
+                        Auxilia na identificação de
+                        obstáculos próximos ao lado
+                        direito do carrinho.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- IMAGENS DO PROJETO -->
+
+    <section class="section white">
+
+        <div class="container">
+
+            <div class="section-head">
+
+                <div>
+
+                    <span class="kicker">
+                        Imagens do projeto
+                    </span>
+
+                    <h2>
+                        Veja o carrinho de outros ângulos.
+                    </h2>
+
+                    <p>
+                        Compare o modelo interativo com
+                        as imagens originais do projeto.
+                    </p>
+
+                </div>
+
+                <a href="galeria.html" class="btn outline">
+                    Galeria completa →
+                </a>
+
+            </div>
+
+            <div class="grid-3">
+
+                <a href="galeria.html"
+                   class="image-card reveal">
+
+                    <img
+                        class="contain"
+                        src="imagens/carrinho-01.png"
+                        alt="Primeira perspectiva do carrinho"
+                        loading="lazy">
+
+                    <div class="image-card-body">
+
+                        <h3>
+                            Modelo digital
+                        </h3>
+
+                        <p>
+                            Conheça a estrutura planejada.
+                        </p>
+
+                    </div>
+
+                </a>
+
+                <a href="galeria.html"
+                   class="image-card reveal">
+
+                    <img
+                        class="contain"
+                        src="imagens/carrinho-03.png"
+                        alt="Outra perspectiva do carrinho"
+                        loading="lazy">
+
+                    <div class="image-card-body">
+
+                        <h3>
+                            Vista alternativa
+                        </h3>
+
+                        <p>
+                            Observe os detalhes do modelo.
+                        </p>
+
+                    </div>
+
+                </a>
+
+                <a href="galeria.html"
+                   class="image-card reveal">
+
+                    <img
+                        class="contain"
+                        src="imagens/carrinho-05.png"
+                        alt="Detalhes da estrutura digital do carrinho"
+                        loading="lazy">
+
+                    <div class="image-card-body">
+
+                        <h3>
+                            Estrutura do carrinho
+                        </h3>
+
+                        <p>
+                            Veja a organização dos componentes.
+                        </p>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- PRÓXIMA PÁGINA -->
+
+    <section class="section slim">
+
+        <div class="container">
+
+            <div class="cta-band">
+
+                <div>
+
+                    <h2>
+                        Quer entender como tudo funciona?
+                    </h2>
+
+                    <p>
+                        Conheça a tecnologia, os sensores
+                        ultrassônicos, o Arduino e os
+                        componentes eletrônicos utilizados
+                        na proposta.
+                    </p>
+
+                </div>
+
+                <a href="funcionamento.html" class="btn">
+                    Conhecer a tecnologia →
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+<!-- RODAPÉ -->
+
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="footer-top">
+
+            <div>
+
+                <a href="index.html" class="brand">
+                    <span class="brand-mark">🛒</span>
+                    <span>Mercado<strong>Acessível</strong></span>
+                </a>
+
+                <p>
+                    Uma proposta estudantil que une
+                    tecnologia e acessibilidade para
+                    tornar a experiência de compras
+                    mais simples e independente.
+                </p>
+
+            </div>
+
+            <div>
+
+                <h4>
+                    Explore
+                </h4>
+
+                <div class="footer-links">
+
+                    <a href="projeto.html">O projeto</a>
+                    <a href="prototipo.html">Protótipo 3D</a>
+                    <a href="funcionamento.html">Tecnologia</a>
+                    <a href="aplicativo.html">Aplicativo</a>
+                    <a href="galeria.html">Galeria</a>
+                    <a href="mapa.html">Mapa</a>
+
+                </div>
+
+            </div>
+
+            <div>
+
+                <h4>
+                    Sobre o trabalho
+                </h4>
+
+                <div class="footer-links">
+
+                    <span>Projeto acadêmico</span>
+                    <span>SENAC Rio Grande do Norte</span>
+                    <span>Conceito em desenvolvimento</span>
+                    <a href="galeria.html">Registros e visitas</a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <span>
+                © <span class="year">2026</span>
+                Mercado Acessível. Projeto educacional.
+            </span>
+
+            <span>
+                Tecnologia e inclusão.
+            </span>
+
+        </div>
+
+    </div>
+
+</footer>
+
+</body>
+</html>
