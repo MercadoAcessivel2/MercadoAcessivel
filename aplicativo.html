@@ -1,0 +1,1113 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0b2340">
+
+    <meta name="description"
+          content="Experimente o aplicativo Mercado Acessível: lista de compras, controle de gastos e leitura em voz alta.">
+
+    <title>Aplicativo | Mercado Acessível</title>
+
+    <link rel="icon" href="assets/favicon.svg">
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+<a href="#conteudo" class="skip-link">
+    Pular para o conteúdo
+</a>
+
+<div class="topline">
+    Tecnologia, inclusão e autonomia • Projeto acadêmico do SENAC RN
+</div>
+
+<!-- MENU PRINCIPAL -->
+
+<header class="site-header">
+
+    <div class="container header-inner">
+
+        <a href="index.html"
+           class="brand"
+           aria-label="Mercado Acessível - página inicial">
+
+            <span class="brand-mark">🛒</span>
+
+            <span>
+                Mercado<strong>Acessível</strong>
+            </span>
+
+        </a>
+
+        <nav class="site-nav"
+             id="site-nav"
+             aria-label="Navegação principal">
+
+            <a href="index.html">Início</a>
+            <a href="projeto.html">O projeto</a>
+            <a href="prototipo.html">Protótipo 3D</a>
+            <a href="funcionamento.html">Tecnologia</a>
+
+            <a href="aplicativo.html"
+               aria-current="page">
+                Aplicativo
+            </a>
+
+            <a href="galeria.html">Galeria</a>
+            <a href="mapa.html">Mapa</a>
+
+        </nav>
+
+        <div class="header-controls">
+
+            <div class="a11y-menu">
+
+                <button type="button"
+                        id="a11y-toggle"
+                        class="icon-btn"
+                        aria-label="Opções de acessibilidade"
+                        aria-controls="a11y-panel"
+                        aria-expanded="false">
+                    ♿
+                </button>
+
+                <div id="a11y-panel" class="a11y-panel">
+
+                    <p>
+                        <strong>Acessibilidade do site</strong>
+                    </p>
+
+                    <div class="a11y-buttons">
+
+                        <button type="button"
+                                data-font="plus">
+                            A+
+                        </button>
+
+                        <button type="button"
+                                data-font="minus">
+                            A−
+                        </button>
+
+                        <button type="button"
+                                id="contrast-toggle">
+                            Contraste
+                        </button>
+
+                        <button type="button"
+                                id="read-page">
+                            Ler página
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <button type="button"
+                    id="nav-toggle"
+                    class="icon-btn menu-toggle"
+                    aria-label="Abrir menu"
+                    aria-controls="site-nav"
+                    aria-expanded="false">
+                ☰
+            </button>
+
+        </div>
+
+    </div>
+
+</header>
+
+<main id="conteudo" tabindex="-1">
+
+    <!-- APRESENTAÇÃO -->
+
+    <section class="page-hero">
+
+        <div class="container">
+
+            <div class="breadcrumbs">
+                <a href="index.html">Início</a>
+                / Aplicativo
+            </div>
+
+            <span class="kicker">
+                Aplicativo de apoio às compras
+            </span>
+
+            <h1>
+                Suas compras, mais organizadas.
+            </h1>
+
+            <p class="lead">
+
+                O Mercado Acessível também propõe
+                um aplicativo para facilitar a
+                organização das compras.
+
+                Experimente nossa demonstração
+                e descubra como funcionam a lista
+                de produtos, o orçamento e
+                a leitura em voz alta.
+
+            </p>
+
+            <div class="btn-row">
+
+                <a href="#demonstracao"
+                   class="btn">
+
+                    Experimentar aplicativo →
+
+                </a>
+
+                <a href="#recursos"
+                   class="btn outline">
+
+                    Conhecer funcionalidades
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- DEMONSTRAÇÃO INTERATIVA -->
+
+    <section class="section white"
+             id="demonstracao">
+
+        <div class="container">
+
+            <div class="section-head">
+
+                <div>
+
+                    <span class="kicker">
+                        Demonstração interativa
+                    </span>
+
+                    <h2>
+                        Experimente o aplicativo.
+                    </h2>
+
+                    <p>
+
+                        Adicione produtos, informe seus
+                        preços e acompanhe o orçamento
+                        diretamente na tela simulada.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="app-layout">
+
+                <!-- SIMULAÇÃO DO CELULAR -->
+
+                <div class="phone reveal">
+
+                    <div class="phone-screen">
+
+                        <div class="phone-top">
+
+                            <span class="pill">
+                                Demonstração
+                            </span>
+
+                            <h3 style="margin-top:15px">
+                                Minhas compras
+                            </h3>
+
+                            <p class="small muted">
+                                Mercado Acessível
+                            </p>
+
+                        </div>
+
+                        <div class="phone-content">
+
+                            <!-- ORÇAMENTO -->
+
+                            <div class="phone-spend">
+
+                                <small>
+                                    Total da lista
+                                </small>
+
+                                <strong id="total-spent">
+                                    R$ 0,00
+                                </strong>
+
+                                <small id="budget-text">
+                                    Orçamento: R$ 100,00
+                                </small>
+
+                                <div class="progress-track">
+
+                                    <div class="progress-fill"
+                                         id="budget-progress">
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <!-- LISTA -->
+
+                            <div style="
+                                display:flex;
+                                align-items:center;
+                                justify-content:space-between;
+                                margin-top:24px;
+                                gap:12px;
+                            ">
+
+                                <h4 style="margin:0">
+                                    Minha lista
+                                </h4>
+
+                                <span class="tag"
+                                      id="item-count">
+                                    0 produtos
+                                </span>
+
+                            </div>
+
+                            <div class="phone-items"
+                                 id="phone-items">
+
+                                <p class="phone-empty">
+                                    Sua lista está vazia.
+                                    Adicione um produto
+                                    para começar.
+                                </p>
+
+                            </div>
+
+                            <p class="small muted"
+                               id="budget-status"
+                               aria-live="polite">
+
+                                Restam R$ 100,00
+                                no orçamento.
+
+                            </p>
+
+                            <div class="phone-mini-logo">
+                                🛒 Mercado Acessível
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- CONTROLES DO APLICATIVO -->
+
+                <div class="app-controls reveal">
+
+                    <span class="kicker">
+                        Painel de compras
+                    </span>
+
+                    <h2 style="font-size:2rem">
+                        Adicione seus produtos.
+                    </h2>
+
+                    <p class="muted">
+
+                        Preencha os campos para
+                        adicionar um produto à lista
+                        de demonstração.
+
+                    </p>
+
+                    <form id="shopping-form">
+
+                        <div class="field">
+
+                            <label for="product-name">
+                                Nome do produto
+                            </label>
+
+                            <input
+                                type="text"
+                                id="product-name"
+                                placeholder="Ex.: Arroz"
+                                maxlength="60"
+                                autocomplete="off"
+                                required>
+
+                        </div>
+
+                        <div class="form-grid">
+
+                            <div class="field">
+
+                                <label for="product-price">
+                                    Preço (R$)
+                                </label>
+
+                                <input
+                                    type="number"
+                                    id="product-price"
+                                    placeholder="Ex.: 6.50"
+                                    min="0"
+                                    max="999999"
+                                    step="0.01"
+                                    inputmode="decimal"
+                                    required>
+
+                            </div>
+
+                            <div class="field">
+
+                                <label for="product-qty">
+                                    Quantidade
+                                </label>
+
+                                <input
+                                    type="number"
+                                    id="product-qty"
+                                    value="1"
+                                    min="1"
+                                    max="99"
+                                    step="1"
+                                    required>
+
+                            </div>
+
+                        </div>
+
+                        <button type="submit"
+                                class="btn">
+
+                            + Adicionar à lista
+
+                        </button>
+
+                    </form>
+
+                    <p id="app-status"
+                       class="small muted"
+                       role="status"
+                       aria-live="polite"
+                       style="margin-top:12px">
+                    </p>
+
+                    <hr style="
+                        border:0;
+                        border-top:1px solid #dbe4e9;
+                        margin:25px 0;
+                    ">
+
+                    <!-- PRODUTOS RÁPIDOS -->
+
+                    <h3>
+                        Adicionar rapidamente
+                    </h3>
+
+                    <p class="small muted">
+
+                        Experimente com alguns
+                        produtos e preços fictícios.
+
+                    </p>
+
+                    <div class="quick-items">
+
+                        <button type="button"
+                                data-sample="Arroz|6.50">
+                            + Arroz
+                        </button>
+
+                        <button type="button"
+                                data-sample="Feijão|8.90">
+                            + Feijão
+                        </button>
+
+                        <button type="button"
+                                data-sample="Leite|5.49">
+                            + Leite
+                        </button>
+
+                        <button type="button"
+                                data-sample="Café|18.90">
+                            + Café
+                        </button>
+
+                        <button type="button"
+                                data-sample="Macarrão|4.50">
+                            + Macarrão
+                        </button>
+
+                        <button type="button"
+                                data-sample="Óleo|7.80">
+                            + Óleo
+                        </button>
+
+                    </div>
+
+                    <hr style="
+                        border:0;
+                        border-top:1px solid #dbe4e9;
+                        margin:25px 0;
+                    ">
+
+                    <!-- ORÇAMENTO -->
+
+                    <h3>
+                        Controle do orçamento
+                    </h3>
+
+                    <p class="small muted">
+
+                        Defina quanto pretende
+                        gastar durante as compras.
+
+                    </p>
+
+                    <div class="field">
+
+                        <label for="budget">
+                            Orçamento disponível (R$)
+                        </label>
+
+                        <input
+                            type="number"
+                            id="budget"
+                            value="100"
+                            min="0.01"
+                            max="999999.99"
+                            step="0.01">
+
+                    </div>
+
+                    <p class="small muted">
+                        O valor é atualizado quando
+                        você altera o campo.
+                    </p>
+
+                    <hr style="
+                        border:0;
+                        border-top:1px solid #dbe4e9;
+                        margin:25px 0;
+                    ">
+
+                    <!-- LEITURA DE VOZ -->
+
+                    <h3>
+                        Recursos de acessibilidade
+                    </h3>
+
+                    <p class="muted">
+
+                        A leitura em voz alta permite
+                        ouvir os nomes e as quantidades
+                        dos produtos adicionados.
+
+                    </p>
+
+                    <button type="button"
+                            class="btn navy"
+                            id="speak-list">
+
+                        🔊 Ouvir minha lista
+
+                    </button>
+
+                    <button type="button"
+                            class="btn outline"
+                            id="clear-list"
+                            style="margin-top:12px">
+
+                        Limpar lista
+
+                    </button>
+
+                </div>
+
+            </div>
+
+            <div class="note blue"
+                 style="margin-top:30px">
+
+                <strong>
+                    Sobre esta demonstração:
+                </strong>
+
+                Os produtos são adicionados
+                manualmente. A demonstração não
+                consulta preços reais dos mercados,
+                não realiza pagamentos e não está
+                conectada ao carrinho físico.
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FUNCIONALIDADES -->
+
+    <section class="section wash"
+             id="recursos">
+
+        <div class="container">
+
+            <div class="section-head">
+
+                <div>
+
+                    <span class="kicker">
+                        Funcionalidades
+                    </span>
+
+                    <h2>
+                        Um aplicativo pensado
+                        para simplificar.
+                    </h2>
+
+                    <p>
+
+                        O objetivo é reunir
+                        ferramentas úteis em
+                        uma interface simples
+                        e fácil de compreender.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="grid-3">
+
+                <article class="feature-card reveal">
+
+                    <div class="feature-icon blue">
+                        📋
+                    </div>
+
+                    <h3>
+                        Lista de compras
+                    </h3>
+
+                    <p>
+
+                        Permite organizar os
+                        produtos antes ou durante
+                        a ida ao supermercado.
+
+                    </p>
+
+                </article>
+
+                <article class="feature-card reveal">
+
+                    <div class="feature-icon">
+                        💰
+                    </div>
+
+                    <h3>
+                        Controle de gastos
+                    </h3>
+
+                    <p>
+
+                        Calcula o total dos
+                        produtos cadastrados
+                        e compara o valor
+                        com o orçamento definido.
+
+                    </p>
+
+                </article>
+
+                <article class="feature-card reveal">
+
+                    <div class="feature-icon green">
+                        🔊
+                    </div>
+
+                    <h3>
+                        Leitura em voz alta
+                    </h3>
+
+                    <p>
+
+                        Utiliza a tecnologia
+                        de voz do navegador
+                        para ler a lista
+                        de produtos.
+
+                    </p>
+
+                </article>
+
+                <article class="feature-card reveal">
+
+                    <div class="feature-icon blue">
+                        ♿
+                    </div>
+
+                    <h3>
+                        Acessibilidade
+                    </h3>
+
+                    <p>
+
+                        O site oferece controles
+                        para aumentar o texto
+                        e alterar o contraste
+                        da interface.
+
+                    </p>
+
+                </article>
+
+                <article class="feature-card reveal">
+
+                    <div class="feature-icon">
+                        🛒
+                    </div>
+
+                    <h3>
+                        Apoio às compras
+                    </h3>
+
+                    <p>
+
+                        Complementa a proposta
+                        do carrinho inteligente,
+                        auxiliando na organização
+                        dos itens e valores.
+
+                    </p>
+
+                </article>
+
+                <article class="feature-card reveal">
+
+                    <div class="feature-icon green">
+                        💾
+                    </div>
+
+                    <h3>
+                        Lista salva no navegador
+                    </h3>
+
+                    <p>
+
+                        Os itens podem permanecer
+                        salvos no próprio navegador,
+                        permitindo continuar
+                        a demonstração posteriormente.
+
+                    </p>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- COMO USAR -->
+
+    <section class="section white">
+
+        <div class="container">
+
+            <div class="section-head">
+
+                <div>
+
+                    <span class="kicker">
+                        Passo a passo
+                    </span>
+
+                    <h2>
+                        Como utilizar a demonstração?
+                    </h2>
+
+                </div>
+
+            </div>
+
+            <div class="steps">
+
+                <article class="step reveal">
+
+                    <div>
+
+                        <h3>
+                            Defina seu orçamento
+                        </h3>
+
+                        <p>
+
+                            Informe o valor máximo
+                            que pretende gastar
+                            durante as compras.
+
+                        </p>
+
+                    </div>
+
+                </article>
+
+                <article class="step reveal">
+
+                    <div>
+
+                        <h3>
+                            Adicione os produtos
+                        </h3>
+
+                        <p>
+
+                            Digite o nome,
+                            o preço e a quantidade
+                            de cada item desejado.
+
+                        </p>
+
+                    </div>
+
+                </article>
+
+                <article class="step reveal">
+
+                    <div>
+
+                        <h3>
+                            Acompanhe os gastos
+                        </h3>
+
+                        <p>
+
+                            Observe o valor total
+                            e o saldo restante
+                            na tela do aplicativo.
+
+                        </p>
+
+                    </div>
+
+                </article>
+
+                <article class="step reveal">
+
+                    <div>
+
+                        <h3>
+                            Utilize a leitura em voz alta
+                        </h3>
+
+                        <p>
+
+                            Clique no botão
+                            "Ouvir minha lista"
+                            para escutar os produtos
+                            cadastrados.
+
+                        </p>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FUTURO DO APLICATIVO -->
+
+    <section class="section wash">
+
+        <div class="container split-info">
+
+            <div class="reveal">
+
+                <span class="kicker">
+                    Próximas possibilidades
+                </span>
+
+                <h2>
+                    Um aplicativo que pode evoluir.
+                </h2>
+
+                <p class="lead">
+
+                    A demonstração atual representa
+                    apenas uma parte das funcionalidades
+                    que poderão ser desenvolvidas
+                    futuramente.
+
+                </p>
+
+                <p>
+
+                    Entre as possibilidades estão
+                    a consulta de informações
+                    sobre produtos, o aprimoramento
+                    da navegação acessível e
+                    a integração com tecnologias
+                    presentes no carrinho.
+
+                </p>
+
+                <p>
+
+                    Essas funções dependerão
+                    de novas etapas de desenvolvimento,
+                    testes e avaliação das
+                    necessidades do público.
+
+                </p>
+
+            </div>
+
+            <div class="feature-card reveal">
+
+                <h3>
+                    Possíveis melhorias futuras
+                </h3>
+
+                <div class="spec-list">
+
+                    <div class="spec-row">
+                        <strong>
+                            Informações dos produtos
+                        </strong>
+                        <span class="tag">
+                            Planejado
+                        </span>
+                    </div>
+
+                    <div class="spec-row">
+                        <strong>
+                            Integração com o carrinho
+                        </strong>
+                        <span class="tag">
+                            Futuro
+                        </span>
+                    </div>
+
+                    <div class="spec-row">
+                        <strong>
+                            Testes de usabilidade
+                        </strong>
+                        <span class="tag">
+                            Previsto
+                        </span>
+                    </div>
+
+                    <div class="spec-row">
+                        <strong>
+                            Melhorias de acessibilidade
+                        </strong>
+                        <span class="tag">
+                            Contínuas
+                        </span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CHAMADA FINAL -->
+
+    <section class="section slim">
+
+        <div class="container">
+
+            <div class="cta-band">
+
+                <div>
+
+                    <h2>
+                        Conheça o carrinho
+                        por trás da ideia.
+                    </h2>
+
+                    <p>
+
+                        Explore o modelo 3D e veja
+                        como sensores e alertas
+                        foram planejados para
+                        auxiliar nas compras.
+
+                    </p>
+
+                </div>
+
+                <a href="prototipo.html"
+                   class="btn">
+
+                    Explorar protótipo 3D →
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+<!-- RODAPÉ -->
+
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="footer-top">
+
+            <div>
+
+                <a href="index.html"
+                   class="brand">
+
+                    <span class="brand-mark">
+                        🛒
+                    </span>
+
+                    <span>
+                        Mercado<strong>Acessível</strong>
+                    </span>
+
+                </a>
+
+                <p>
+
+                    Uma proposta estudantil
+                    que une tecnologia e
+                    acessibilidade para
+                    tornar as compras mais
+                    organizadas e independentes.
+
+                </p>
+
+            </div>
+
+            <div>
+
+                <h4>
+                    Explore
+                </h4>
+
+                <div class="footer-links">
+
+                    <a href="projeto.html">
+                        O projeto
+                    </a>
+
+                    <a href="prototipo.html">
+                        Protótipo 3D
+                    </a>
+
+                    <a href="funcionamento.html">
+                        Tecnologia
+                    </a>
+
+                    <a href="aplicativo.html">
+                        Aplicativo
+                    </a>
+
+                    <a href="galeria.html">
+                        Galeria
+                    </a>
+
+                    <a href="mapa.html">
+                        Mapa
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div>
+
+                <h4>
+                    Sobre o trabalho
+                </h4>
+
+                <div class="footer-links">
+
+                    <span>
+                        Projeto acadêmico
+                    </span>
+
+                    <span>
+                        SENAC Rio Grande do Norte
+                    </span>
+
+                    <span>
+                        Conceito em desenvolvimento
+                    </span>
+
+                    <a href="galeria.html">
+                        Registros e visitas
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <span>
+                © <span class="year">2026</span>
+                Mercado Acessível. Projeto educacional.
+            </span>
+
+            <span>
+                Tecnologia e inclusão.
+            </span>
+
+        </div>
+
+    </div>
+
+</footer>
+
+</body>
+</html>
